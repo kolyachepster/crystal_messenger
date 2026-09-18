@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crystal Messenger</title>
+
+<link rel="stylesheet" href="frontend/css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            Crystal
+
+        </div>
+
+        <input
+            class="search"
+            placeholder="Поиск..."
+        >
+
+        <button id="createGroupButton">
+            + Создать группу
+        </button>
+
+        <div id="groupModal" class="modal hidden">
+
+            <div class="modalContent">
+
+                <h2>Создать группу</h2>
+
+                <input
+                    id="groupName"
+                    type="text"
+                    placeholder="Название группы"
+                >
+
+                <h3>Участники</h3>
+
+                <div id="groupUsers"></div>
+
+                <div class="modalButtons">
+
+                    <button id="cancelGroupButton">
+                        Отмена
+                    </button>
+
+                    <button id="confirmGroupButton">
+                        Создать
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <h3>Группы</h3>
+
+        <div id="groups"></div>
+
+        <h3>Пользователи</h3>
+
+        <div id="users">
+
+        </div>
+
+    </div>
+
+    <div class="chat">
+
+        <div id="chatHeader">
+
+            Выберите пользователя
+
+        </div>
+
+        <div id="messages">
+
+        </div>
+
+        <div class="sendBox">
+
+            <input
+                id="messageInput"
+                placeholder="Введите сообщение..."
+            >
+
+            <button id="sendButton">
+
+                ➜
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/frontend/js/config.js"></script>
+<script src="/frontend/js/chat.js"></script>
+
+</body>
+</html>

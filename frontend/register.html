@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crystal Messenger — Вход</title>
+
+    <link rel="stylesheet" href="/frontend/css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-glow"></div>
+
+    <main class="login-box">
+
+        <div class="crystal-logo">
+            ◆
+        </div>
+
+        <h1>Crystal</h1>
+
+        <p class="auth-subtitle">
+            Войдите в свой аккаунт
+        </p>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+                <label for="email">Email</label>
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Введите email"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="password">Пароль</label>
+
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Введите пароль"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="auth-button">
+                Войти
+                <span>→</span>
+            </button>
+
+        </form>
+
+        <p class="auth-footer">
+            Нет аккаунта?
+            <a href="register.html">Зарегистрироваться</a>
+        </p>
+
+    </main>
+
+    <script src="/frontend/js/config.js"></script>
+    <script src="/frontend/js/login.js"></script>
+
+</body>
+</html>
